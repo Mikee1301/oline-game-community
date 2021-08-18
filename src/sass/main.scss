@@ -1,0 +1,97 @@
+@import "./fonts";
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: league;
+  font-size: 14px;
+  color: $color-neutral;
+  background: url("/src/img/bg-primary.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+header {
+  height: 10vh;
+  background-color: $bg-primary;
+  opacity: 0.8;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    &__logo {
+      position: relative;
+      width: 10%;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bxs-ghost {
+        font-size: 32px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(50% - 40%);
+        background-color: $color-primary;
+        width: 1px;
+        height: 80%;
+      }
+    }
+    &__nav {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &__link {
+        color: $color-neutral;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        margin-right: 25px;
+
+        .bx {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+
+    &__create {
+      background-color: $bg-secondary;
+      border: none;
+      border-radius: 5px;
+      color: $color-neutral;
+      font-size: 14px;
+      margin-right: 25px;
+      padding: 5px 5px;
+      text-transform: uppercase;
+      width: 90px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .bx-plus {
+        font-size: 18px;
+      }
+    }
+    .bxs-user-circle {
+      font-size: 32px;
+    }
+  }
+}

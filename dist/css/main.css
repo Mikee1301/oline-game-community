@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "league";
+  src: url("../fonts/leaguegothic-condensedregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: league;
+  font-size: 14px;
+  color: #fff;
+  background: url("/src/img/bg-primary.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  height: 10vh;
+  background-color: #1f2334;
+  opacity: 0.8;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .left__logo {
+  position: relative;
+  width: 10%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left__logo .bxs-ghost {
+  font-size: 32px;
+}
+
+header .left__logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  background-color: #71788f;
+  width: 1px;
+  height: 80%;
+}
+
+header .left__nav {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left__nav__link {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 25px;
+}
+
+header .left__nav__link .bx {
+  margin-right: 5px;
+}
+
+header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+}
+
+header .right__create {
+  background-color: #6759e9;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 25px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .right__create .bx-plus {
+  font-size: 18px;
+}
+
+header .right .bxs-user-circle {
+  font-size: 32px;
+}
